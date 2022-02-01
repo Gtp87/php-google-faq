@@ -65,6 +65,24 @@ $faqs = [
 <title>Document</title>
 </head>
 <body>
+<header>
+<div class="container-header">
+    <div class="header-top">
+        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+        <h1>Privacy e termini</h1>
+    </div>
+    <div class="header-bottom">
+        <ul class="nav-menu">
+            <li>Introduzione</li>
+            <li>Norme sulla privacy</li>
+            <li>Termini di servizio</li>
+            <li>Tecnoloigie</li>
+            <li class="active">Domande frequenti</li>
+        </ul>
+    </div>
+</div>
+</header>
+<main>
 <div class="container-faq">
 <?php
     foreach ($faqs as $value) {
@@ -73,6 +91,27 @@ $faqs = [
     }
 ?>
 </div>
+</main>
+<footer>
+    <div class="container-footer">
+        <div class="left">
+            <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Tutto su Google</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Termini</a></li>
+            </ul>
+        </div>
+        <div class="right">
+        <i class="fas fa-globe-europe"></i>
+        <select name="Lingua" id="">
+            <option value="">Italian</option>
+            <option value="">English</option>
+            <option value="">Deutsch</option>
+        </select>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 
